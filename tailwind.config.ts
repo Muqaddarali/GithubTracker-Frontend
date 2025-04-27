@@ -1,14 +1,11 @@
-
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
 	darkMode: "class",
 	content: [
-		"./pages/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/**/*.{js,jsx,ts,tsx}",
+		"./index.html",
 	],
 	prefix: "",
 	theme: {
@@ -71,6 +68,9 @@ export default {
 					review: '#c084fc',
 					bg: '#0f172a',
 				}
+			},
+			borderColor: {
+				DEFAULT: 'hsl(var(--border))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
